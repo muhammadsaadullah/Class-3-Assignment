@@ -1,4 +1,6 @@
+import Footer from "./coponents/Footer";
 import Navbar from "./coponents/Navbar";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -9,6 +11,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
